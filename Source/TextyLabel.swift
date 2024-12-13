@@ -110,6 +110,10 @@ open class TextyLabel: UILabel, TextStyleDelegate {
         fatalError("not supported")
     }
 
+    public func updatePossiblyTaggedText(_ newValue: String?) {
+        possiblyTaggedText = newValue
+    }
+
     private func setDefaults() {
         /// If the font/textColor are not set yet by the TextStyle passed in, then set some default values
         self.text = nil
